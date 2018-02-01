@@ -3,7 +3,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.new()
+    @student = Student.new(stuent_params)
   end
 
   private
