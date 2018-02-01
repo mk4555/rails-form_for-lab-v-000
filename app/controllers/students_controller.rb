@@ -4,6 +4,8 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(stuent_params)
+    @student.save
+    redirect_to student_path(@student)
   end
 
   private
