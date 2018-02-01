@@ -8,6 +8,9 @@ class StudentsController < ApplicationController
     redirect_to student_path(@student)
   end
 
+  def show
+  end
+
   private
 
   def student_params(*args)
