@@ -1,6 +1,8 @@
 class SchoolClassesController < ApplicationController
   def create
-    @post = Post.create(school_class_params)
+    @school_class = SchoolClass.new(school_class_params)
+    @school_class.save
+    redirect_to school_class_path(@school_class)
   end
 
   def new
