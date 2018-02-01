@@ -13,6 +13,9 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
+  def edit
+  end
+
   private
 
   def student_params(*args)
