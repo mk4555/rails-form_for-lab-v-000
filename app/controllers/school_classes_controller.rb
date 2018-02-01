@@ -22,6 +22,7 @@ class SchoolClassesController < ApplicationController
     @school_class.update(school_class_params(:title, :room_number))
     redirect_to school_class_path(@school_class)
   end
+  
   private
 
   def school_class_params(*args)
