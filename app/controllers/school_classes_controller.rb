@@ -1,6 +1,6 @@
 class SchoolClassesController < ApplicationController
   def create
-    @post = Post.create(params[:])
+    @post = Post.create(school_class_params)
   end
 
   def new
