@@ -1,6 +1,6 @@
 class StudentsController < ApplicationController
   def new
-    @student = Student.enw
+    @student = Student.new
   end
 
   def create
